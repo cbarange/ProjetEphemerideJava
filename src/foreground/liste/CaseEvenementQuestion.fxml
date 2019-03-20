@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.liste.CaseEvenementQuestionController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="86.0" layoutX="2.0" layoutY="2.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="886.0" />
+      <Label fx:id="question" layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="700.0" />
+      <Rectangle fx:id="btnDelete" arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="50.0" layoutX="820.0" layoutY="20.0" onMouseEntered="#btnDeleteAnimEnter" onMouseExited="#btnDeleteAnimExit" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+      <Rectangle fx:id="btnEdit" arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="50.0" layoutX="750.0" layoutY="20.0" onMouseEntered="#btnEditAnimEnter" onMouseExited="#btnEditAnimExit" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+      <SVGPath fx:id="crayon" content="M18.362 8.464L19.795 9.895L7.125 22.564L0 24L1.439 16.873L14.104 4.205L15.535 5.636L3.28 17.86L2.554 21.444L6.138 20.721L18.362 8.464ZM18.306 0L15.491 2.817L21.182 8.509L23.999 5.688L18.306 0V0ZM5.988 18.718L17.301 7.402L16.596 6.695L5.283 18.009L5.988 18.718Z" fill="WHITE" layoutX="763.0" layoutY="33.0" onMouseEntered="#btnEditAnimEnter" />
+      <SVGPath fx:id="gomme" content="M5.662 22L0.293 16.635C0.098 16.44 0 16.185 0 15.928C0 15.672 0.098 15.416 0.293 15.221L15.222 0.293C15.417 0.099 15.673 0 15.929 0C16.184 0 16.441 0.099 16.636 0.293L23.707 7.366C23.903 7.561 24 7.817 24 8.074C24 8.33 23.903 8.585 23.707 8.781L12.491 20H18.005V22H5.662ZM9.319 20L3.833 14.514L2.414 15.928L6.49 20H9.319ZM15.924 2.419L5.247 13.099L10.905 18.758L21.581 8.076L15.924 2.419Z" fill="WHITE" layoutX="833.0" layoutY="34.0" onMouseEntered="#btnDeleteAnimEnter" />
+   </children>
+</Pane>

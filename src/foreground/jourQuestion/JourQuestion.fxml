@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onKeyPressed="#keyPess" prefHeight="500.0" prefWidth="1000.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.jourQuestion.JourQuestionController">
+   <children>
+      <Pane fx:id="barrePane" prefHeight="60.0" prefWidth="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="300.0" layoutX="50.0" layoutY="178.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="900.0" />
+      <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="48.0" layoutY="90.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="180.0" />
+      <Label fx:id="dateSec1" alignment="CENTER" layoutX="65.0" layoutY="90.0" prefHeight="60.0" prefWidth="147.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="226.0" layoutY="90.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="180.0" />
+      <Label fx:id="dateSec2" alignment="CENTER" layoutX="243.0" layoutY="90.0" prefHeight="60.0" prefWidth="147.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="594.0" layoutY="90.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="180.0" />
+      <Label fx:id="dateSec3" alignment="CENTER" layoutX="611.0" layoutY="90.0" prefHeight="60.0" prefWidth="147.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="772.0" layoutY="90.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="180.0" />
+      <Label fx:id="dateSec4" alignment="CENTER" layoutX="789.0" layoutY="90.0" prefHeight="60.0" prefWidth="147.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcWidth="5.0" height="64.0" layoutX="46.0" layoutY="88.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="908.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="80.0" layoutX="380.0" layoutY="80.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="240.0">
+         <effect>
+            <DropShadow color="#141414" height="37.31" radius="17.0425" width="32.86" />
+         </effect></Rectangle>
+      <Label fx:id="datePrincipal" alignment="CENTER" layoutX="416.0" layoutY="82.0" prefHeight="76.0" prefWidth="168.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <SVGPath fx:id="backArrow" content="M4.094 2.814L13.186 12L4.094 21.186L2.85 19.979L10.829 12L2.85 4.021L4.094 2.814ZM4.122 0L0 4L8 12L0 20L4.122 24L16 12L4.122 0Z" fill="WHITE" layoutX="20.0" layoutY="108.0" style="-fx-rotate: 180;" />
+      <Rectangle arcWidth="5.0" fill="DODGERBLUE" height="64.0" layoutX="6.0" layoutY="88.0" onMouseClicked="#backTemp" onMouseEntered="#backTempEnterAnim" onMouseExited="#backTempExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="39.0" />
+      <SVGPath fx:id="foreArrow" content="M4.094 2.814L13.186 12L4.094 21.186L2.85 19.979L10.829 12L2.85 4.021L4.094 2.814ZM4.122 0L0 4L8 12L0 20L4.122 24L16 12L4.122 0Z" fill="WHITE" layoutX="963.0" layoutY="108.0" />
+      <Rectangle arcWidth="5.0" fill="DODGERBLUE" height="64.0" layoutX="955.0" layoutY="88.0" onMouseClicked="#foreTemp" onMouseEntered="#foreTempEnterAnim" onMouseExited="#foreTempExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="39.0" />
+      <Label fx:id="labelQuestion" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="188.0" prefHeight="35.0" prefWidth="868.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelRep" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="165.0" layoutY="434.0" prefHeight="35.0" prefWidth="650.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnShow" layoutX="818.0" layoutY="438.0" mnemonicParsing="false" onAction="#btnShow" styleClass="bouton" text="Afficher la réponse">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnIndice" layoutX="65.0" layoutY="439.0" mnemonicParsing="false" onAction="#btnShowIndice" styleClass="bouton" text="Obtenir Indice" />
+      <CheckBox fx:id="ch4" layoutX="623.0" layoutY="366.0" mnemonicParsing="false" text="CheckBox" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="ch2" layoutX="622.0" layoutY="282.0" mnemonicParsing="false" text="CheckBox" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="ch3" layoutX="318.0" layoutY="366.0" mnemonicParsing="false" text="CheckBox" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></CheckBox>
+      <TextField fx:id="tfRep" layoutX="331.0" layoutY="282.0" prefHeight="93.0" prefWidth="319.0" />
+      <CheckBox fx:id="ch1" layoutX="317.0" layoutY="282.0" mnemonicParsing="false" text="CheckBox" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="labelIndice" layoutX="63.0" layoutY="411.0" text=" " textFill="WHITE" />
+      <Pane fx:id="paneDispo" layoutX="55.0" layoutY="182.0" prefHeight="293.0" prefWidth="891.0" visible="false">
+         <children>
+            <Rectangle arcWidth="5.0" fill="#393b47" height="293.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="891.0" />
+            <Text fill="WHITE" layoutX="265.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question pas encore disponnible !">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="barreOpenPane" prefHeight="500.0" prefWidth="1000.0" visible="false" />
+   </children>
+</AnchorPane>

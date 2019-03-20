@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" styleClass="background" stylesheets="@../Foreground.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.dimanche.DimancheController">
+    <children>
+        <Pane fx:id="barrePane" prefHeight="60.0" prefWidth="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="200.0" layoutX="400.0" layoutY="284.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="200.0" layoutX="182.0" layoutY="284.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="200.0" layoutX="618.0" layoutY="285.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="200.0" layoutX="292.0" layoutY="70.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="200.0" layoutX="508.0" layoutY="70.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="200.0" layoutX="75.0" layoutY="70.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="200.0" layoutX="724.0" layoutY="70.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Text fill="WHITE" layoutX="153.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lundi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="369.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mardi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="567.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mercredi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="801.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeudi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="248.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendredi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="470.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Samedi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="677.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dimanche">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+        <Pane fx:id="barreOpenPane" prefHeight="500.0" prefWidth="1000.0" visible="false" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onKeyPressed="#enterPress" prefHeight="500.0" prefWidth="1000.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.connexion.ConnexionController">
+   <children>
+      <Text fill="WHITE" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repix">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="layout" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="1000.0" />
+      <SVGPath content="M20.822 18.096c-3.439-.794-6.64-1.49-5.09-4.418 4.72-8.912 1.251-13.678-3.732-13.678-5.082 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-3.073.71-3.188 2.236-3.178 4.904l.004 1h23.99l.004-.969c.012-2.688-.092-4.222-3.176-4.935zM20.822 18.096c-3.439-.794-6.64-1.49-5.09-4.418 4.72-8.912 1.251-13.678-3.732-13.678-5.082 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-3.073.71-3.188 2.236-3.178 4.904l.004 1h23.99l.004-.969c.012-2.688-.092-4.222-3.176-4.935z" fill="WHITE" layoutX="25.0" layoutY="109.0" />
+      <Text fill="WHITE" layoutX="76.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="champsLogin" layoutX="300.0" layoutY="210.0" prefHeight="25.0" prefWidth="600.0" />
+      <PasswordField fx:id="champsPassword" layoutX="300.0" layoutY="310.0" prefHeight="25.0" prefWidth="600.0" />
+      <TextField fx:id="afficherPassword" layoutX="300.0" layoutY="310.0" prefHeight="25.0" prefWidth="600.0" visible="false" />
+      <Button layoutX="10.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnRegister" prefHeight="25.0" prefWidth="200.0" styleClass="bouton" text="S'inscrire">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Rectangle fx:id="btnClose" arcHeight="5.0" arcWidth="5.0" fill="#eb5757" height="31.0" layoutX="967.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" onMouseExited="#btnCloseAnimExit" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="33.0" />
+      <SVGPath fx:id="crossClose" content="M14.5923 2.00954L15.2187 2.62367L9.28701 8.49646L15.2895 14.3062L14.6639 14.9203L8.67289 9.10492L2.72672 14.9919L2.11982 14.3969L8.05371 8.50354L2.04829 2.67325L2.65519 2.07825L8.66567 7.89508L14.5923 2.00954ZM14.5858 0L8.65266 5.89192L2.64868 0.08075L0 2.67821L6.01192 8.51487L0.082365 14.4032L2.73177 17L8.68301 11.1081L14.6689 16.9192L17.34 14.2998L11.3324 8.48512L17.2576 2.61871L14.5858 0V0Z" fill="#eb5757" layoutX="975.0" layoutY="8.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" />
+      <Rectangle fill="WHITE" height="7.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+      <CheckBox fx:id="checkPassword" layoutX="920.0" layoutY="315.0" mnemonicParsing="false" text="Afficher" textFill="#fffefe" />
+      <Button layoutX="790.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnConnexion" prefHeight="25.0" prefWidth="200.0" styleClass="bouton" text="Se connecter">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

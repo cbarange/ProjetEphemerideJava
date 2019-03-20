@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btnClick" prefHeight="44.0" prefWidth="104.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.calendrier.CaseJourController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="40.0" layoutX="2.0" layoutY="2.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="100.0" />
+      <Label fx:id="nbDay" alignment="CENTER" layoutX="20.0" layoutY="9.0" prefHeight="27.0" prefWidth="64.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <SVGPath fx:id="svgEvent" content="M9.46023 2.46563C9.05775 2.23187 8.80901 1.79688 8.80963 1.32812V1.32625C8.81026 0.59375 8.22341 0 7.49969 0C6.77597 0 6.18912 0.59375 6.18912 1.32625V1.32812C6.18974 1.7975 5.94163 2.23187 5.53852 2.46563C2.62177 4.16062 4.29795 9.7875 1.24995 10.7819V11.875H13.7494V10.7819C10.7014 9.7875 12.3776 4.16062 9.46023 2.46563ZM7.49969 0.625C7.84467 0.625 8.12466 0.905625 8.12466 1.25C8.12466 1.595 7.84467 1.875 7.49969 1.875C7.1547 1.875 6.87471 1.595 6.87471 1.25C6.87471 0.905625 7.1547 0.625 7.49969 0.625ZM9.37461 13.125C9.37461 14.1237 8.50465 15 7.51781 15C6.53098 15 5.62477 14.1237 5.62477 13.125H9.37461ZM12.9857 5.82562C13.0982 6.27625 13.017 6.72937 12.7957 7.0975L13.4019 7.4625C13.7169 6.93875 13.8319 6.29438 13.6726 5.655C13.5132 5.015 13.1101 4.5 12.5857 4.18563L12.222 4.79187C12.5901 5.01375 12.8738 5.37563 12.9857 5.82562ZM13.2332 3.10938L12.8601 3.73125C13.4994 4.11625 13.9925 4.74563 14.1882 5.5275C14.3825 6.30937 14.2413 7.09625 13.8569 7.73625L14.4781 8.11C14.8131 7.5525 15 6.90625 15 6.235C14.9994 4.9975 14.3688 3.79187 13.2332 3.10938ZM2.77738 4.79187L2.41365 4.18563C1.8893 4.50063 1.48619 5.015 1.32682 5.655C1.16745 6.29438 1.28245 6.93812 1.59743 7.4625L2.20366 7.0975C1.98242 6.73 1.90117 6.27625 2.01367 5.82562C2.12554 5.37563 2.40927 5.01375 2.77738 4.79187ZM0 6.23438C0 6.90563 0.186867 7.55188 0.521853 8.10938L1.14308 7.73562C0.758718 7.09562 0.617474 6.30875 0.811841 5.52688C1.00683 4.745 1.49994 4.11562 2.13929 3.73125L1.76618 3.10938C0.630599 3.79187 0 4.9975 0 6.23438Z" layoutX="86.0" layoutY="3.0" visible="false" />
+      <Circle fx:id="circlePasti" layoutX="94.0" layoutY="34.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+   </children>
+</Pane>

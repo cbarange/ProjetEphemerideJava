@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" styleClass="background" stylesheets="@../Foreground.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.parametreEnseignant.ParametreEnseignantController">
+   <children>
+      <Pane fx:id="barrePane" prefHeight="60.0" prefWidth="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="70.0" layoutX="50.0" layoutY="90.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="640.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="70.0" layoutX="50.0" layoutY="170.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="900.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="70.0" layoutX="50.0" layoutY="250.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="900.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="70.0" layoutX="700.0" layoutY="330.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="250.0" />
+      <Button layoutX="470.0" layoutY="105.0" mnemonicParsing="false" onAction="#btnNotice" prefHeight="25.0" prefWidth="200.0" styleClass="bouton" text="Consulter">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="activerNotif" layoutX="730.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnActiverNotif" prefHeight="25.0" prefWidth="200.0" styleClass="bouton1" text="Activé">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="activerDemarrageLancement" layoutX="730.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnActiverDemarrageLancement" prefHeight="25.0" prefWidth="200.0" styleClass="bouton1" text="Activé">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="715.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnChangePassword" prefHeight="41.0" prefWidth="220.0" styleClass="bouton" text="Changer mot de passe">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="70.0" layoutX="50.0" layoutY="330.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="640.0" />
+      <Text fill="WHITE" layoutX="70.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode d'emploi" wrappingWidth="190.14712524414062">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="70.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autoriser les notifications " wrappingWidth="275.48046875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="70.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lancement de l’application au démarrage de Windows" wrappingWidth="522.1471252441406">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="70.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimisation de l’application à la fermeture" wrappingWidth="522.1471252441406">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="activerMinimisation" layoutX="470.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnActiverMinimisation" prefHeight="25.0" prefWidth="200.0" styleClass="bouton2" text="Désactivé">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="lundiB" layoutX="50.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnLundi" prefHeight="70.0" prefWidth="140.0" styleClass="bouton1" text="Lundi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="mardiB" layoutX="202.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnMardi" prefHeight="70.0" prefWidth="140.0" styleClass="bouton1" text="Mardi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="mercrediB" layoutX="354.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnMercredi" prefHeight="70.0" prefWidth="140.0" styleClass="bouton1" text="Mercredi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="jeudiB" layoutX="506.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnJeudi" prefHeight="70.0" prefWidth="140.0" styleClass="bouton1" text="Jeudi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="vendrediB" layoutX="658.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnVendredi" prefHeight="70.0" prefWidth="140.0" styleClass="bouton1" text="Vendredi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="samediB" layoutX="810.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnSamedi" prefHeight="70.0" prefWidth="140.0" styleClass="bouton1" text="Samedi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="70.0" layoutX="700.0" layoutY="90.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="250.0" />
+      <Button layoutX="715.0" layoutY="105.0" mnemonicParsing="false" onAction="#btnDeconnexion" prefHeight="41.0" prefWidth="220.0" styleClass="bouton" text="Deconnexion">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Pane fx:id="barreOpenPane" prefHeight="500.0" prefWidth="1000.0" visible="false" />
+   </children>
+</AnchorPane>

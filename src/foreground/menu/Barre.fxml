@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.menu.MenuController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="#393b47" height="30.0" layoutX="75.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="926.0" />
+      <SVGPath content="M13.3527 0H4.51322L0 5.09091L8.90182 16L17.8036 5.15127L13.3527 0ZM4.69793 5.81818L7.09475 11.4567L2.49325 5.81818H4.69793ZM11.4982 5.81818L8.90182 11.9273L6.30545 5.81818H11.4982ZM6.77651 4.36364L8.90182 1.86327L11.0271 4.36364H6.77651ZM13.1057 5.81818H15.3519L10.6911 11.4989L13.1057 5.81818ZM15.1783 4.36364H12.9588L10.4856 1.45455H12.6651L15.1783 4.36364ZM5.18976 1.45455H7.31804L4.84481 4.36364H2.6112L5.18976 1.45455Z" fill="#56ccf2" layoutX="765.0" layoutY="7.0" />
+      <Label fx:id="labelCredit" layoutX="786.0" layoutY="2.0" text="50" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <SVGPath content="M8.16 1.33333C11.9095 1.33333 14.96 4.324 14.96 8C14.96 11.676 11.9095 14.6667 8.16 14.6667C4.41048 14.6667 1.36 11.676 1.36 8C1.36 4.324 4.41048 1.33333 8.16 1.33333ZM8.16 0C3.65364 0 0 3.582 0 8C0 12.418 3.65364 16 8.16 16C12.6664 16 16.32 12.418 16.32 8C16.32 3.582 12.6664 0 8.16 0ZM12.1366 8.306C12.274 8.33133 12.274 8.528 12.1373 8.554C10.8406 8.79467 8.02672 9.29467 7.68536 9.29467C7.19644 9.29467 6.80068 8.90667 6.80068 8.42733C6.80068 8.086 7.32428 4.796 7.56568 3.464C7.5888 3.336 7.77784 3.34333 7.79892 3.47333L8.46872 7.632L12.1366 8.306Z" fill="#f2994a" layoutX="848.0" layoutY="7.0" />
+      <Label fx:id="labelHeure" layoutX="867.0" layoutY="2.0" text="00:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="btnClose" arcHeight="5.0" arcWidth="5.0" fill="#eb5757" height="30.0" layoutX="967.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" onMouseExited="#btnCloseAnimExit" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="33.0" />
+      <SVGPath fx:id="crossClose" content="M14.5923 2.00954L15.2187 2.62367L9.28701 8.49646L15.2895 14.3062L14.6639 14.9203L8.67289 9.10492L2.72672 14.9919L2.11982 14.3969L8.05371 8.50354L2.04829 2.67325L2.65519 2.07825L8.66567 7.89508L14.5923 2.00954ZM14.5858 0L8.65266 5.89192L2.64868 0.08075L0 2.67821L6.01192 8.51487L0.082365 14.4032L2.73177 17L8.68301 11.1081L14.6689 16.9192L17.34 14.2998L11.3324 8.48512L17.2576 2.61871L14.5858 0V0Z" fill="#eb5757" layoutX="975.0" layoutY="7.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" />
+      <Rectangle fx:id="btnMini" arcHeight="5.0" arcWidth="5.0" fill="#87de9f" height="30.0" layoutX="934.0" onMouseClicked="#miniRequest" onMouseEntered="#btnMiniAnimEnter" onMouseExited="#btnMiniAnimExit" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="33.0" />
+      <SVGPath fx:id="mini" content="M14.96 1.33333V2.66667H1.36V1.33333H14.96ZM0 0V4H16.32V0H0ZM14.96 1.33333V2.66667H1.36V1.33333H14.96ZM0 0V4H16.32V0H0Z" fill="#6fcf97" layoutX="942.0" layoutY="21.0" onMouseClicked="#miniRequest" onMouseEntered="#btnMiniAnimEnter" />
+      <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="-1.0" layoutY="-2.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="74.0" />
+      <SVGPath content="M6.4 32H0V25.6H6.4V32ZM6.4 12.8H0V19.2H6.4V12.8ZM6.4 0H0V6.4H6.4V0ZM11.2 0V6.4H38.4V0H11.2ZM11.2 19.2H38.4V12.8H11.2V19.2ZM11.2 32H38.4V25.6H11.2V32Z" fill="WHITE" layoutX="15.0" layoutY="13.0" />
+      <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="-1.0" layoutY="-2.0" onMouseEntered="#menuOpenEnter" opacity="0.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="74.0" />
+      <Rectangle fx:id="layout" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="75.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="853.0" />
+   </children>
+</Pane>

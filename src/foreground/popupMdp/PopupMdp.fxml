@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" styleClass="background" stylesheets="@../Background.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.popupMdp.PopupMdpController">
+   <children>
+      <Text fill="WHITE" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Changer le mot de passe">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="layout" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="370.0" />
+      <Rectangle fx:id="btnClose" arcHeight="5.0" arcWidth="5.0" fill="#eb5757" height="31.0" layoutX="367.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" onMouseExited="#btnCloseAnimExit" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="33.0" />
+      <SVGPath fx:id="crossClose" content="M14.5923 2.00954L15.2187 2.62367L9.28701 8.49646L15.2895 14.3062L14.6639 14.9203L8.67289 9.10492L2.72672 14.9919L2.11982 14.3969L8.05371 8.50354L2.04829 2.67325L2.65519 2.07825L8.66567 7.89508L14.5923 2.00954ZM14.5858 0L8.65266 5.89192L2.64868 0.08075L0 2.67821L6.01192 8.51487L0.082365 14.4032L2.73177 17L8.68301 11.1081L14.6689 16.9192L17.34 14.2998L11.3324 8.48512L17.2576 2.61871L14.5858 0V0Z" fill="#ff4f4f" layoutX="375.0" layoutY="8.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" />
+      <Rectangle arcWidth="5.0" fill="WHITE" height="2.0" layoutY="41.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ancien mot de passe :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fAM" layoutX="175.0" layoutY="53.0" prefHeight="25.0" prefWidth="194.0" />
+      <PasswordField fx:id="pAM" layoutX="175.0" layoutY="53.0" prefHeight="25.0" prefWidth="194.0" />
+      <CheckBox fx:id="cAM" layoutX="374.0" layoutY="57.0" mnemonicParsing="false" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouveau mot de passe :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fNM" layoutX="175.0" layoutY="88.0" prefHeight="25.0" prefWidth="194.0" />
+      <PasswordField fx:id="pNM" layoutX="175.0" layoutY="88.0" prefHeight="25.0" prefWidth="194.0" />
+      <CheckBox fx:id="cNM" layoutX="374.0" layoutY="92.0" mnemonicParsing="false" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmation :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fCM" layoutX="175.0" layoutY="123.0" prefHeight="25.0" prefWidth="194.0" />
+      <PasswordField fx:id="pCM" layoutX="175.0" layoutY="123.0" prefHeight="25.0" prefWidth="194.0" />
+      <CheckBox fx:id="cCM" layoutX="374.0" layoutY="127.0" mnemonicParsing="false" />
+      <Button layoutX="14.0" layoutY="159.0" mnemonicParsing="false" onAction="#closeRequest" styleClass="bouton" text="Annuler" />
+      <Button layoutX="329.0" layoutY="159.0" mnemonicParsing="false" onAction="#valideRequest" styleClass="bouton" text="Valider" />
+      <Text fx:id="tAM" fill="#ff4343" layoutX="82.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ancien mot de passe incorrect" />
+      <Text fx:id="tCM" fill="#ff4343" layoutX="82.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mots de passe différent" />
+   </children>
+</AnchorPane>

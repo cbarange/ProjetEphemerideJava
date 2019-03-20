@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" styleClass="background" stylesheets="@../Foreground.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.calendrier.CalendrierController">
+    <children>
+        <Pane fx:id="barrePane" prefHeight="60.0" prefWidth="1000.0" />
+        <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="48.0" layoutY="90.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="180.0" />
+        <Label fx:id="dateSec1" alignment="CENTER" layoutX="65.0" layoutY="90.0" prefHeight="60.0" prefWidth="147.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="226.0" layoutY="90.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="180.0" />
+        <Label fx:id="dateSec2" alignment="CENTER" layoutX="243.0" layoutY="90.0" prefHeight="60.0" prefWidth="147.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="594.0" layoutY="90.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="180.0" />
+        <Label fx:id="dateSec3" alignment="CENTER" layoutX="611.0" layoutY="90.0" prefHeight="60.0" prefWidth="147.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Rectangle arcWidth="5.0" fill="#393b47" height="60.0" layoutX="772.0" layoutY="90.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="180.0" />
+        <Label fx:id="dateSec4" alignment="CENTER" layoutX="789.0" layoutY="90.0" prefHeight="60.0" prefWidth="147.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Rectangle arcWidth="5.0" height="64.0" layoutX="46.0" layoutY="88.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="908.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="80.0" layoutX="380.0" layoutY="80.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="240.0">
+            <effect>
+                <DropShadow color="#141414" height="37.31" radius="17.0425" width="32.86" />
+            </effect></Rectangle>
+        <Label fx:id="datePrincipal" alignment="CENTER" layoutX="416.0" layoutY="82.0" prefHeight="76.0" prefWidth="168.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <SVGPath fx:id="backArrow" content="M4.094 2.814L13.186 12L4.094 21.186L2.85 19.979L10.829 12L2.85 4.021L4.094 2.814ZM4.122 0L0 4L8 12L0 20L4.122 24L16 12L4.122 0Z" fill="WHITE" layoutX="20.0" layoutY="108.0" style="-fx-rotate: 180;" />
+        <Rectangle arcWidth="5.0" fill="DODGERBLUE" height="64.0" layoutX="6.0" layoutY="88.0" onMouseClicked="#backTemp" onMouseEntered="#backTempEnterAnim" onMouseExited="#backTempExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="39.0" />
+        <SVGPath fx:id="foreArrow" content="M4.094 2.814L13.186 12L4.094 21.186L2.85 19.979L10.829 12L2.85 4.021L4.094 2.814ZM4.122 0L0 4L8 12L0 20L4.122 24L16 12L4.122 0Z" fill="WHITE" layoutX="963.0" layoutY="108.0" />
+        <Rectangle arcWidth="5.0" fill="DODGERBLUE" height="64.0" layoutX="955.0" layoutY="88.0" onMouseClicked="#foreTemp" onMouseEntered="#foreTempEnterAnim" onMouseExited="#foreTempExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="39.0" />
+      <GridPane fx:id="gp" alignment="CENTER" layoutX="70.0" layoutY="209.0" prefHeight="285.0" prefWidth="884.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Text fill="WHITE" layoutX="90.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lundi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="226.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mardi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="353.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mercredi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="478.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeudi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="584.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendredi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="727.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Samedi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="842.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dimanche">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+        <Pane fx:id="barreOpenPane" prefHeight="500.0" prefWidth="1000.0" visible="false" />
+    </children>
+</AnchorPane>

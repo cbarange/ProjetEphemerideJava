@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" styleClass="background" stylesheets="@../Foreground.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.ajoutObjetEnseignantQuestion.AjoutObjetEnseignantQuestionController">
+    <children>
+        <Pane fx:id="barrePane" prefHeight="60.0" prefWidth="1000.0" />
+      <Text fill="WHITE" layoutX="121.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout d'une question">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="indiceText" fill="WHITE" layoutX="14.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Indice :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Réponse :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="316.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Indice :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="468.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Année :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="748.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="champQu" layoutX="121.0" layoutY="103.0" prefHeight="25.0" prefWidth="856.0" />
+      <TextField fx:id="indiceChamp" layoutX="121.0" layoutY="180.0" prefHeight="25.0" prefWidth="856.0" />
+      <TextField fx:id="champRep" layoutX="121.0" layoutY="218.0" prefHeight="25.0" prefWidth="856.0" />
+      <ChoiceBox fx:id="typeSelect" layoutX="120.0" layoutY="139.0" prefHeight="25.0" prefWidth="138.0" />
+      <CheckBox fx:id="indiceCheck" layoutX="390.0" layoutY="143.0" mnemonicParsing="false" selected="true" />
+      <ChoiceBox fx:id="typeAnnee" layoutX="549.0" layoutY="139.0" prefWidth="150.0" />
+      <Button layoutX="828.0" layoutY="139.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Importer" />
+      <Button fx:id="btn8" layoutX="839.0" layoutY="461.0" mnemonicParsing="false" onAction="#btnTerminer" prefHeight="25.0" prefWidth="138.0" styleClass="bouton" text="Terminer" />
+      <Button layoutX="679.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" styleClass="bouton" text="Annuler" />
+      <Pane fx:id="paneType" layoutX="14.0" layoutY="217.0" prefHeight="238.0" prefWidth="964.0" styleClass="background" visible="false">
+         <children>
+            <Text fx:id="indiceText1" fill="WHITE" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choix :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="indiceChamp1" layoutX="107.0" layoutY="2.0" prefHeight="25.0" prefWidth="639.0" />
+            <CheckBox layoutX="769.0" layoutY="6.0" mnemonicParsing="false" />
+            <Button fx:id="btnTrue1" layoutX="814.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnTrueO1" prefHeight="25.0" prefWidth="150.0" text="Faux" />
+            <TextField fx:id="indiceChamp11" layoutX="107.0" layoutY="33.0" prefHeight="25.0" prefWidth="639.0" />
+            <TextField fx:id="indiceChamp111" layoutX="107.0" layoutY="63.0" prefHeight="25.0" prefWidth="639.0" />
+            <TextField fx:id="indiceChamp1111" layoutX="107.0" layoutY="93.0" prefHeight="25.0" prefWidth="639.0" />
+            <CheckBox layoutX="769.0" layoutY="37.0" mnemonicParsing="false" />
+            <CheckBox layoutX="769.0" layoutY="67.0" mnemonicParsing="false" />
+            <CheckBox layoutX="769.0" layoutY="97.0" mnemonicParsing="false" />
+            <Button fx:id="btnTrue2" layoutX="814.0" layoutY="33.0" mnemonicParsing="false" onAction="#btnTrueO2" prefHeight="25.0" prefWidth="150.0" text="Faux" />
+            <Button fx:id="btnTrue3" layoutX="814.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnTrueO3" prefHeight="25.0" prefWidth="150.0" text="Faux" />
+            <Button fx:id="btnTrue4" layoutX="814.0" layoutY="93.0" mnemonicParsing="false" onAction="#btnTrueO4" prefHeight="25.0" prefWidth="150.0" text="Faux" />
+         </children>
+      </Pane>
+        <Pane fx:id="barreOpenPane" prefHeight="500.0" prefWidth="1000.0" visible="false" />
+    </children>
+</AnchorPane>

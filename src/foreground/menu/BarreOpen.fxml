@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.menu.MenuController">
+   <children>
+      <Rectangle arcWidth="5.0" height="500.0" onMouseEntered="#menuOpenEnter" opacity="0.3" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+      <Rectangle arcWidth="5.0" fill="#393b47" height="30.0" layoutX="300.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="700.0" />
+      <SVGPath content="M13.3527 0H4.51322L0 5.09091L8.90182 16L17.8036 5.15127L13.3527 0ZM4.69793 5.81818L7.09475 11.4567L2.49325 5.81818H4.69793ZM11.4982 5.81818L8.90182 11.9273L6.30545 5.81818H11.4982ZM6.77651 4.36364L8.90182 1.86327L11.0271 4.36364H6.77651ZM13.1057 5.81818H15.3519L10.6911 11.4989L13.1057 5.81818ZM15.1783 4.36364H12.9588L10.4856 1.45455H12.6651L15.1783 4.36364ZM5.18976 1.45455H7.31804L4.84481 4.36364H2.6112L5.18976 1.45455Z" fill="#56ccf2" layoutX="765.0" layoutY="7.0" />
+      <Label fx:id="labelCredit" layoutX="786.0" layoutY="2.0" text="50" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <SVGPath content="M8.16 1.33333C11.9095 1.33333 14.96 4.324 14.96 8C14.96 11.676 11.9095 14.6667 8.16 14.6667C4.41048 14.6667 1.36 11.676 1.36 8C1.36 4.324 4.41048 1.33333 8.16 1.33333ZM8.16 0C3.65364 0 0 3.582 0 8C0 12.418 3.65364 16 8.16 16C12.6664 16 16.32 12.418 16.32 8C16.32 3.582 12.6664 0 8.16 0ZM12.1366 8.306C12.274 8.33133 12.274 8.528 12.1373 8.554C10.8406 8.79467 8.02672 9.29467 7.68536 9.29467C7.19644 9.29467 6.80068 8.90667 6.80068 8.42733C6.80068 8.086 7.32428 4.796 7.56568 3.464C7.5888 3.336 7.77784 3.34333 7.79892 3.47333L8.46872 7.632L12.1366 8.306Z" fill="#f2994a" layoutX="848.0" layoutY="7.0" />
+      <Label fx:id="labelHeure" layoutX="867.0" layoutY="2.0" text="00:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="btnClose" arcHeight="5.0" arcWidth="5.0" fill="#eb5757" height="30.0" layoutX="967.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" onMouseExited="#btnCloseAnimExit" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="33.0" />
+      <SVGPath fx:id="crossClose" content="M14.5923 2.00954L15.2187 2.62367L9.28701 8.49646L15.2895 14.3062L14.6639 14.9203L8.67289 9.10492L2.72672 14.9919L2.11982 14.3969L8.05371 8.50354L2.04829 2.67325L2.65519 2.07825L8.66567 7.89508L14.5923 2.00954ZM14.5858 0L8.65266 5.89192L2.64868 0.08075L0 2.67821L6.01192 8.51487L0.082365 14.4032L2.73177 17L8.68301 11.1081L14.6689 16.9192L17.34 14.2998L11.3324 8.48512L17.2576 2.61871L14.5858 0V0Z" fill="#eb5757" layoutX="975.0" layoutY="7.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" />
+      <Rectangle fx:id="btnMini" arcHeight="5.0" arcWidth="5.0" fill="#87de9f" height="30.0" layoutX="934.0" onMouseClicked="#miniRequest" onMouseEntered="#btnMiniAnimEnter" onMouseExited="#btnMiniAnimExit" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="33.0" />
+      <SVGPath fx:id="mini" content="M14.96 1.33333V2.66667H1.36V1.33333H14.96ZM0 0V4H16.32V0H0ZM14.96 1.33333V2.66667H1.36V1.33333H14.96ZM0 0V4H16.32V0H0Z" fill="#6fcf97" layoutX="942.0" layoutY="21.0" onMouseClicked="#miniRequest" onMouseEntered="#btnMiniAnimEnter" />
+      <Rectangle arcWidth="5.0" fill="#393b47" height="419.0" layoutX="-6.0" layoutY="-6.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="308.0" />
+      <SVGPath content="M6.4 32H0V25.6H6.4V32ZM6.4 12.8H0V19.2H6.4V12.8ZM6.4 0H0V6.4H6.4V0ZM11.2 0V6.4H38.4V0H11.2ZM11.2 19.2H38.4V12.8H11.2V19.2ZM11.2 32H38.4V25.6H11.2V32Z" fill="WHITE" layoutX="15.0" layoutY="13.0" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcWidth="5.0" fill="WHITE" height="2.0" layoutY="58.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle fx:id="rectAccueil" arcWidth="5.0" height="59.0" layoutY="59.0" onMouseClicked="#btnAccueil" onMouseEntered="#btnAccueilEnterAnim" onMouseExited="#btnAccueilExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <SVGPath content="M32.4545 18.5455V34H23.1818V24.7273H13.9091V34H4.63636V18.5455H0L18.5455 0L37.0909 18.5455H32.4545ZM30.9091 9.41645V1.54545H26.2727V4.78009L30.9091 9.41645Z" fill="WHITE" layoutX="15.0" layoutY="72.0" onMouseClicked="#btnAccueil" onMouseEntered="#btnAccueilEnterAnim" onMouseExited="#btnAccueilExitAnim" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="98.0" onMouseClicked="#btnAccueil" onMouseEntered="#btnAccueilEnterAnim" onMouseExited="#btnAccueilExitAnim" strokeType="OUTSIDE" strokeWidth="0.0" text="Accueil">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="rectCalendrier" arcWidth="5.0" height="59.0" layoutY="118.0" onMouseClicked="#btnCalendrier" onMouseEntered="#btnCalendrierEnterAnim" onMouseExited="#btnCalendrierExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <SVGPath content="M30.9083 30.9083H24.7267V24.7267H30.9083V30.9083ZM21.6358 15.4542H15.4542V21.6358H21.6358V15.4542ZM30.9083 15.4542H24.7267V21.6358H30.9083V15.4542ZM12.3633 24.7267H6.18167V30.9083H12.3633V24.7267ZM21.6358 24.7267H15.4542V30.9083H21.6358V24.7267ZM12.3633 15.4542H6.18167V21.6358H12.3633V15.4542ZM37.09 3.09083V37.09H0V3.09083H4.63625V4.63625C4.63625 6.34084 6.02249 7.72708 7.72708 7.72708C9.43168 7.72708 10.8179 6.34084 10.8179 4.63625V3.09083H26.2721V4.63625C26.2721 6.34084 27.6583 7.72708 29.3629 7.72708C31.0675 7.72708 32.4538 6.34084 32.4538 4.63625V3.09083H37.09ZM33.9992 12.3633H3.09083V33.9992H33.9992V12.3633ZM30.9083 1.54542C30.9083 0.692347 30.2175 0 29.3629 0C28.5083 0 27.8175 0.692347 27.8175 1.54542V4.63625C27.8175 5.48932 28.5083 6.18167 29.3629 6.18167C30.2175 6.18167 30.9083 5.48932 30.9083 4.63625V1.54542ZM9.2725 4.63625C9.2725 5.48932 8.5817 6.18167 7.72708 6.18167C6.87247 6.18167 6.18167 5.48932 6.18167 4.63625V1.54542C6.18167 0.692347 6.87247 0 7.72708 0C8.5817 0 9.2725 0.692347 9.2725 1.54542V4.63625Z" fill="WHITE" layoutX="15.0" layoutY="131.0" onMouseClicked="#btnCalendrier" onMouseEntered="#btnCalendrierEnterAnim" onMouseExited="#btnCalendrierExitAnim" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="157.0" onMouseClicked="#btnCalendrier" onMouseEntered="#btnCalendrierEnterAnim" onMouseExited="#btnCalendrierExitAnim" strokeType="OUTSIDE" strokeWidth="0.0" text="Calendrier">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="rectEvenement" arcWidth="5.0" height="59.0" layoutY="177.0" onMouseClicked="#btnEvent" onMouseEntered="#btnEvenementEnterAnim" onMouseExited="#btnEvenementExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <SVGPath content="M18.545 10.0019L20.6761 16.5638H27.5764L21.9944 20.6205L24.1255 27.1823L18.545 23.1256L12.963 27.1823L15.0941 20.6205L9.51204 16.5638H16.4123L18.545 10.0019ZM18.545 -1.91597e-08L14.1668 13.4729H0L11.4608 21.8012L7.08264 35.2741L18.545 26.9474L30.0058 35.2741L25.6276 21.8012L37.09 13.4729H22.9232L18.545 -1.91597e-08Z" fill="WHITE" layoutX="15.0" layoutY="190.0" onMouseClicked="#btnEvent" onMouseEntered="#btnEvenementEnterAnim" onMouseExited="#btnEvenementExitAnim" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="216.0" onMouseClicked="#btnEvent" onMouseEntered="#btnEvenementEnterAnim" onMouseExited="#btnEvenementExitAnim" strokeType="OUTSIDE" strokeWidth="0.0" text="Événement">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="rectOption" arcWidth="5.0" height="59.0" layoutY="236.0" onMouseClicked="#btnParam" onMouseEntered="#btnOptionEnterAnim" onMouseExited="#btnOptionExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <SVGPath content="M26.2721 14.9055V11.3681C24.4639 10.7236 23.325 10.5444 22.7485 9.15659C22.1721 7.76572 22.8567 6.81992 23.6758 5.09988L21.1753 2.59785C19.4676 3.40919 18.5125 4.10308 17.117 3.5251C15.7262 2.94711 15.5453 1.79887 14.9055 0H11.3665C10.7298 1.78959 10.5475 2.94711 9.15505 3.52355H9.1535C7.76263 4.10154 6.81992 3.41537 5.09678 2.5963L2.59785 5.09833C3.41228 6.81374 4.10154 7.76263 3.5251 9.15505C2.94556 10.5475 1.78959 10.7298 0 11.3665V14.904C1.78496 15.5407 2.94711 15.7246 3.52355 17.1155C4.10463 18.5187 3.39837 19.4862 2.5963 21.1722L5.09678 23.6742C6.80756 22.8629 7.76108 22.169 9.1535 22.747H9.15505C10.5459 23.3234 10.7283 24.4748 11.3665 26.2705H14.904C15.5407 24.4809 15.7231 23.3265 17.1248 22.7439H17.1263C18.5079 22.169 19.446 22.8536 21.1738 23.6742L23.6742 21.1722C22.8629 19.4614 22.169 18.5095 22.7454 17.1155C23.3234 15.7262 24.4856 15.5407 26.2721 14.9055ZM13.136 17.5158C10.719 17.5158 8.75788 15.5546 8.75788 13.136C8.75788 10.7175 10.719 8.75633 13.136 8.75633C15.5531 8.75633 17.5142 10.7175 17.5142 13.136C17.5142 15.5546 15.5531 17.5158 13.136 17.5158ZM37.09 24.0142V22.3498C36.24 22.0469 35.7038 21.9619 35.4318 21.3097C35.1598 20.6545 35.4828 20.211 35.8676 19.3996L34.69 18.222C33.8864 18.6053 33.4366 18.9298 32.7814 18.6594C32.1261 18.3889 32.0411 17.848 31.7398 17.0011H30.0769C29.7771 17.8434 29.6905 18.3874 29.0353 18.6594C28.38 18.9314 27.9365 18.6084 27.1267 18.222L25.9491 19.3996C26.3324 20.2079 26.6569 20.6545 26.3849 21.3097C26.1129 21.965 25.5689 22.05 24.7267 22.3498V24.0142C25.5674 24.3125 26.1129 24.4006 26.3849 25.0543C26.6584 25.7142 26.3262 26.1701 25.9491 26.9644L27.1267 28.142C27.9319 27.7588 28.3816 27.4342 29.0353 27.7047C29.6905 27.9751 29.7755 28.5176 30.0769 29.3629H31.7398C32.0396 28.5207 32.1261 27.9767 32.7845 27.7031H32.786C33.4366 27.4327 33.8771 27.7557 34.69 28.142L35.8676 26.9644C35.4859 26.1593 35.1598 25.7096 35.4318 25.0558C35.7038 24.4021 36.2493 24.3125 37.09 24.0142ZM30.9083 25.2413C29.7709 25.2413 28.8483 24.3187 28.8483 23.1813C28.8483 22.0438 29.7709 21.1212 30.9083 21.1212C32.0458 21.1212 32.9684 22.0438 32.9684 23.1813C32.9684 24.3187 32.0458 25.2413 30.9083 25.2413Z" fill="WHITE" layoutX="15.0" layoutY="249.0" onMouseClicked="#btnParam" onMouseEntered="#btnOptionEnterAnim" onMouseExited="#btnOptionExitAnim" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="275.0" onMouseClicked="#btnParam" onMouseEntered="#btnOptionEnterAnim" onMouseExited="#btnOptionExitAnim" strokeType="OUTSIDE" strokeWidth="0.0" text="Options">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="rectMagasin" arcWidth="5.0" height="59.0" layoutY="295.0" onMouseClicked="#btnMag" onMouseEntered="#btnMagasinEnterAnim" onMouseExited="#btnMagasinExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <SVGPath content="M20.8631 22.9831C19.5835 22.9831 18.545 24.0128 18.545 25.2814C18.545 26.5516 19.5835 27.5797 20.8631 27.5797C22.1427 27.5797 23.1813 26.5516 23.1813 25.2814C23.1813 24.0128 22.1427 22.9831 20.8631 22.9831ZM15.4542 25.2814C15.4542 26.5516 14.4156 27.5797 13.136 27.5797C11.8564 27.5797 10.8179 26.5516 10.8179 25.2814C10.8179 24.0128 11.8564 22.9831 13.136 22.9831C14.4156 22.9831 15.4542 24.0128 15.4542 25.2814ZM37.09 0L35.9418 3.06442H32.9606L27.5934 21.4509H7.13364L0 4.59662H3.35201L9.1875 18.3865H25.3031L30.607 0H37.09ZM18.545 6.12883H23.1813V9.19325H18.545V13.7899H15.4542V9.19325H10.8179V6.12883H15.4542V1.53221H18.545V6.12883Z" fill="WHITE" layoutX="15.0" layoutY="308.0" onMouseClicked="#btnMag" onMouseEntered="#btnMagasinEnterAnim" onMouseExited="#btnMagasinExitAnim" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="334.0" onMouseClicked="#btnMag" onMouseEntered="#btnMagasinEnterAnim" onMouseExited="#btnMagasinExitAnim" strokeType="OUTSIDE" strokeWidth="0.0" text="Magasin">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="rectDeco" arcWidth="5.0" height="59.0" layoutY="354.0" onMouseClicked="#btnDeco" onMouseEntered="#btnDecoEnterAnim" onMouseExited="#btnDecoExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <SVGPath content="M16 12.771h-3.091c-.542 0-.82-.188-1.055-.513l-1.244-1.674-2.029 2.199 1.008 1.562c.347.548.373.922.373 1.42v4.235h-1.962v-3.981c-.016-1.1-1.695-2.143-2.313-1.253l-1.176 1.659c-.261.372-.706.498-1.139.498h-3.372v-1.906l2.532-.001c.397 0 .741-.14.928-.586l1.126-2.75c.196-.41.46-.782.782-1.102l2.625-2.6-.741-.647c-.223-.195-.521-.277-.812-.227l-2.181.381-.342-1.599 2.992-.571c.561-.107 1.042.075 1.461.462l2.882 2.66c.456.414.924 1.136 1.654 2.215.135.199.323.477.766.477h2.328v1.642zm-2.982-5.042c1.02-.195 1.688-1.182 1.493-2.201-.172-.901-.96-1.528-1.845-1.528-1.186 0-2.07 1.078-1.85 2.234.196 1.021 1.181 1.69 2.202 1.495zm4.982-5.729v15l6 5v-20h-6z" fill="WHITE" layoutX="22.0" layoutY="372.0" onMouseClicked="#btnDeco" onMouseEntered="#btnDecoEnterAnim" onMouseExited="#btnDecoExitAnim" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="393.0" onMouseClicked="#btnDeco" onMouseEntered="#btnDecoEnterAnim" onMouseExited="#btnDecoExitAnim" strokeType="OUTSIDE" strokeWidth="0.0" text="Deconnexion">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="layout" arcWidth="5.0" fill="DODGERBLUE" height="34.0" layoutX="304.0" layoutY="-1.0" onMouseEntered="#menuOpenEnter" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="624.0" />
+      <Pane fx:id="paneAdmin" layoutY="413.0" prefHeight="71.0" prefWidth="312.0">
+         <children>
+            <Rectangle arcWidth="5.0" fill="#393b47" height="59.0" layoutX="-14.0" layoutY="2.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" width="316.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393b47" height="59.0" layoutX="-10.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="background" width="312.0" />
+            <Rectangle fx:id="rectGQ" arcWidth="5.0" height="59.0" onMouseClicked="#btnGestionQ" onMouseEntered="#btnGQEnterAnim" onMouseExited="#btnGQExitAnim" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+            <SVGPath content="M20 2.5C24.1362 2.5 27.5 5.86375 27.5 10C27.5 14.1362 24.1362 17.5 20 17.5C15.8638 17.5 12.5 14.1362 12.5 10C12.5 5.86375 15.8638 2.5 20 2.5ZM20 0C14.4775 0 10 4.4775 10 10C10 15.5225 14.4775 20 20 20C25.5225 20 30 15.5225 30 10C30 4.4775 25.5225 0 20 0ZM13.2438 20.5L11.4038 22.5H7.5V25H5V27.5H2.5V24.7762L9.87875 17.3062C9.37375 16.6075 8.93625 15.8588 8.58125 15.0625L0 23.75V30H7.5V27.5H10V25H12.5L15.5638 21.6712C14.745 21.36 13.9688 20.9688 13.2438 20.5ZM22.5 6.25C23.1887 6.25 23.75 6.81125 23.75 7.5C23.75 8.18875 23.1887 8.75 22.5 8.75C21.8113 8.75 21.25 8.18875 21.25 7.5C21.25 6.81125 21.8113 6.25 22.5 6.25ZM22.5 5C21.12 5 20 6.12 20 7.5C20 8.88 21.12 10 22.5 10C23.88 10 25 8.88 25 7.5C25 6.12 23.88 5 22.5 5Z" fill="WHITE" layoutX="14.0" layoutY="15.0" onMouseClicked="#btnGestionQ" onMouseEntered="#btnGQEnterAnim" onMouseExited="#btnGQExitAnim" />
+            <Text fill="WHITE" layoutX="72.0" layoutY="37.0" onMouseClicked="#btnGestionQ" onMouseEntered="#btnGQEnterAnim" onMouseExited="#btnGQExitAnim" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion question">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</Pane>

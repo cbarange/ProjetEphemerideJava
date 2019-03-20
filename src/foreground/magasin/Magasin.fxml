@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" styleClass="background" stylesheets="@../Foreground.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.magasin.MagasinController">
+   <children>
+      <Pane fx:id="barrePane" prefHeight="60.0" prefWidth="1000.0" />
+      <Text fill="WHITE" layoutX="150.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Magasin">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <SVGPath content="M20.8631 22.9831C19.5835 22.9831 18.545 24.0128 18.545 25.2814C18.545 26.5516 19.5835 27.5797 20.8631 27.5797C22.1427 27.5797 23.1813 26.5516 23.1813 25.2814C23.1813 24.0128 22.1427 22.9831 20.8631 22.9831ZM15.4542 25.2814C15.4542 26.5516 14.4156 27.5797 13.136 27.5797C11.8564 27.5797 10.8179 26.5516 10.8179 25.2814C10.8179 24.0128 11.8564 22.9831 13.136 22.9831C14.4156 22.9831 15.4542 24.0128 15.4542 25.2814ZM37.09 0L35.9418 3.06442H32.9606L27.5934 21.4509H7.13364L0 4.59662H3.35201L9.1875 18.3865H25.3031L30.607 0H37.09ZM18.545 6.12883H23.1813V9.19325H18.545V13.7899H15.4542V9.19325H10.8179V6.12883H15.4542V1.53221H18.545V6.12883Z" fill="WHITE" layoutX="100.0" layoutY="105.0" />
+      <Button fx:id="style1" layoutX="100.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnStyle1" prefHeight="130.0" prefWidth="400.0" styleClass="style1" text="Acheter [25]">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="style3" layoutX="100.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnStyle3" prefHeight="130.0" prefWidth="400.0" styleClass="style3" text="Acheter [75]">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="style2" layoutX="535.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnStyle2" prefHeight="130.0" prefWidth="400.0" styleClass="style2" text="Acheter [50]">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="style4" layoutX="535.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnStyle4" prefHeight="130.0" prefWidth="400.0" styleClass="style4" text="Acheter [100]">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Pane fx:id="barreOpenPane" prefHeight="500.0" prefWidth="1000.0" visible="false" />
+      <Button layoutX="813.0" layoutY="86.0" mnemonicParsing="false" onAction="#resetStyle" prefHeight="55.0" prefWidth="122.0" styleClass="bouton" text="Reset" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

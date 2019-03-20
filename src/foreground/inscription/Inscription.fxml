@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" styleClass="background" stylesheets="@../Foreground.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foreground.inscription.InscriptionController">
+   <children>
+      <Text fill="WHITE" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repix">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="layout" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="33.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="1000.0" />
+      <SVGPath content="M19.5 15c-2.483 0-4.5 2.015-4.5 4.5s2.017 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.017-4.5-4.5-4.5zm2.5 5h-2v2h-1v-2h-2v-1h2v-2h1v2h2v1zm-7.18 4h-14.815l-.005-1.241c0-2.52.199-3.975 3.178-4.663 3.365-.777 6.688-1.473 5.09-4.418-4.733-8.729-1.35-13.678 3.732-13.678 6.751 0 7.506 7.595 3.64 13.679-1.292 2.031-2.64 3.63-2.64 5.821 0 1.747.696 3.331 1.82 4.5z" fill="WHITE" layoutX="25.0" layoutY="109.0" />
+      <Text fill="WHITE" layoutX="76.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inscription">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmer le mot de passe :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse mail :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmer l'adresse mail :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="champsLogin" layoutX="300.0" layoutY="160.0" prefHeight="25.0" prefWidth="600.0" />
+      <TextField fx:id="champsEmail" layoutX="300.0" layoutY="310.0" prefHeight="25.0" prefWidth="600.0" />
+      <TextField fx:id="champsEmailConf" layoutX="300.0" layoutY="360.0" prefHeight="25.0" prefWidth="600.0" />
+      <TextField fx:id="clefAdmin" editable="false" layoutX="300.0" layoutY="410.0" prefHeight="25.0" prefWidth="600.0" />
+      <CheckBox fx:id="checkAdmin" layoutX="40.0" layoutY="410.0" mnemonicParsing="false" text="   Enseignant :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="790.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnRegister" prefHeight="25.0" prefWidth="200.0" styleClass="bouton" text="S'inscrire">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Rectangle fx:id="btnClose" arcHeight="5.0" arcWidth="5.0" fill="#eb5757" height="31.0" layoutX="967.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" onMouseExited="#btnCloseAnimExit" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="33.0" />
+      <SVGPath fx:id="crossClose" content="M14.5923 2.00954L15.2187 2.62367L9.28701 8.49646L15.2895 14.3062L14.6639 14.9203L8.67289 9.10492L2.72672 14.9919L2.11982 14.3969L8.05371 8.50354L2.04829 2.67325L2.65519 2.07825L8.66567 7.89508L14.5923 2.00954ZM14.5858 0L8.65266 5.89192L2.64868 0.08075L0 2.67821L6.01192 8.51487L0.082365 14.4032L2.73177 17L8.68301 11.1081L14.6689 16.9192L17.34 14.2998L11.3324 8.48512L17.2576 2.61871L14.5858 0V0Z" fill="#eb5757" layoutX="975.0" layoutY="8.0" onMouseClicked="#closeRequest" onMouseEntered="#btnCloseAnimEnter" />
+      <Rectangle fill="WHITE" height="7.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+      <TextField fx:id="afficherPassword" layoutX="300.0" layoutY="210.0" prefHeight="25.0" prefWidth="600.0" visible="false" />
+      <PasswordField fx:id="champsPassword" layoutX="300.0" layoutY="210.0" prefHeight="25.0" prefWidth="600.0" />
+      <TextField fx:id="afficherPasswordConf" layoutX="300.0" layoutY="260.0" prefHeight="25.0" prefWidth="600.0" visible="false" />
+      <PasswordField fx:id="champsPasswordConf" layoutX="300.0" layoutY="260.0" prefHeight="25.0" prefWidth="600.0" />
+      <CheckBox fx:id="checkPassword" layoutX="920.0" layoutY="213.0" mnemonicParsing="false" text="Afficher" textFill="#fffefe" />
+      <CheckBox fx:id="checkPasswordConf" layoutX="920.0" layoutY="263.0" mnemonicParsing="false" text="Afficher" textFill="#fffefe" />
+      <Button layoutX="10.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnConnexion" prefHeight="25.0" prefWidth="200.0" styleClass="bouton" text="Se connecter">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelLogin" layoutX="300.0" layoutY="185.0" text="Le login saisie est déjà utilisé par un autre utilisateur ..." textFill="RED" visible="false" />
+      <Label fx:id="labelMdp" layoutX="300.0" layoutY="285.0" text="Les deux mot de passe ne correspondent pas" textFill="RED" visible="false" />
+      <Label fx:id="labelEmail" layoutX="300.0" layoutY="385.0" text="Les deux adresses mails ne correspondent pas" textFill="RED" visible="false" />
+      <Label fx:id="labelEmail1" layoutX="300.0" layoutY="461.0" text="Champs invalide !" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
